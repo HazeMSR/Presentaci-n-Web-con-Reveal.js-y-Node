@@ -1,0 +1,454 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Producci&#243;n Automatizada
+    meta(name="description", content="Produccion Automatizada")
+    meta(name="author", content="Hazel")
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style", content="black-translucent")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui")
+    link(rel="stylesheet", href="css/reveal.css")
+    link#theme(rel="stylesheet", href="css/theme/night.css")
+    // Code syntax highlighting
+    link(rel="stylesheet", href="lib/css/zenburn.css")
+    link(rel="stylesheet", ,="", href="bootstrap-3.1.1-dist/css/bootstrap.min.css")
+    // Printing and PDF exports
+    script
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    style
+      h1{
+      text-shadow: 0 6px 1px rgba(0,0,0,.1),
+      0 0 5px rgba(0,0,0,.1),
+      0 1px 3px rgba(0,0,0,.3),
+      0 3px 5px rgba(0,0,0,.2),
+      0 5px 10px rgba(0,0,0,.25),
+      0 10px 10px rgba(0,0,0,.2),
+      0 20px 20px rgba(0,0,0,.15);
+      }
+    //if lt IE 9
+      script(src="lib/js/html5shiv.js")
+  body(style="background-color:#1c1e20;")
+    .reveal(data-background="##1c1e20")
+      // Any section element inside of this container is displayed as a slide
+      .slides
+        section(data-background="./images/fondoP.jpg")
+          #sombra
+            br
+            br
+            h1(style="text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);") Producci&#243;n Automatizada
+            h3(style="text-shadow: \
+            0 1px 3px rgba(0,0,0,.8);") Equipo 9
+            br
+            br
+            br
+            p
+              h4
+                | Pueden ver la presentaci&#243;n desde su celular ingresando a
+                #nombre(style="color:#D2AE1D;") 192.168.43.223:3000/
+        section(data-background="#1C1706")
+          section
+            h2(style="color:#D2AE1D;text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);") Origenes de la Automatizaci&#243;n
+            br
+            p
+              | Las primeras m&#225;quinas simples sustitu&#237;an una forma de esfuerzo en otra forma que fueran manejadas por el ser humano, tal como levantar un peso pesado con sistema de poleas o con una palanca.
+            br
+            img(src="./images/auto1.jpg")
+          section(data-transition="slide", data-background-transition="zoom", data-background="./images/fondolight.png")
+            h2 Lo que buscaban antes
+            br
+            p(style="color:rgba(255, 226, 37, 0.9);text-shadow:0 2px 5px rgba(0,0,0,.9);")
+              | Posteriormente las m&#225;quinas fueron capaces de sustituir la energ&#237;a humana o animal por formas naturales de energ&#237;a renovable, tales como el viento, las mareas, o un flujo de agua.
+        section(data-transition="convex", data-background="./images/fondo22.jpg")
+          section
+            h1(style="color:#FFFFFF;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);") Automatizaci&#243;n industrial
+            br
+            .row
+              .col-lg-8
+                h4(style="text-shadow:0 1px 3px rgba(0,0,0,.8);")
+                  | Es el uso de sistemas o elementos computarizados y electromec&#225;nicos para controlar maquinarias o procesos industriales.
+              .col-lg-4
+                img(data-src="./images/computer.png")
+            br
+          section(data-transition="slide", data-background-transition="zoom", data-background="./images/fondo24.jpg")
+            h2(style="color:#FFFFFF;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);") Automatizaci&#243;n industrial como ingenier&#237;a
+            br
+            .row
+              .col-lg-4
+                img(data-src="./images/camara.jpg")
+              .col-lg-8
+                h3(style="color:#FFFFFF;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+                0 0 5px rgba(0,0,0,.1),\
+                0 1px 3px rgba(0,0,0,.3),\
+                0 3px 5px rgba(0,0,0,.2),\
+                0 5px 10px rgba(0,0,0,.25),\
+                0 10px 10px rgba(0,0,0,.2),\
+                0 20px 20px rgba(0,0,0,.15);")
+                  | Como una disciplina de la ingenier&#237;a m&#225;s amplia que un sistema de control, abarca la instrumentaci&#243;n industrial, que incluye los sensores, los transmisores de campo, los sistemas de control y supervisi&#243;n.
+          section(data-transition="slide", data-background-transition="zoom", data-background="./images/fondo23.jpg")
+            h2(style="color:#FFFFFF;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);") Niveles de automatizaci&#243;n:
+            br
+            .row
+              .col-lg-8
+                p
+                  h3(style="color:rgba(20,20,20,.9);text-shadow:0 1px 3px rgba(250,250,250,.8);")
+                    em Nivel(0) de Proceso
+                br
+                h4
+                  p(style="color:rgba(250,250,250,.9);")
+                    | En este nivel se adquieren datos del proceso mediante sensores situados en &#233;l y se act&#250;a mediante actuadores. Por lo tanto, este nivel es el encargado de la comunicaci&#243;n de los diferentes controladores del nivel de estaci&#243;n con los dispositivos de campo (Field devices).
+              .col-lg-4
+                p(align="center")
+                  img(data-src="./images/torre.png")
+            br
+          section(data-transition="slide", data-background-transition="zoom", data-background="./images/fondocompu.jpg")
+            // 0BA4B5
+            h2(style="color:#9DE912;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);") Nivel (1) de Estaci&#243;n / M&#225;quina:
+            br
+            .row
+              .col-lg-12
+                br
+                h3
+                  p(style="color:#FFFFFF;text-shadow:0 3px 5px rgba(50,50,50,.9),")
+                    | En este nivel se elabora la informaci&#243;n procedente de los dispositivos del nivel inferior y se informa al usuario de la situaci&#243;n de las variables y alarmas.
+            br
+          section(data-transition="slide", data-background-transition="zoom", data-background="./images/fondo25.jpg")
+            h2(style="color:#C4D4F0;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);") Nivel (2) de Taller / C&#233;lula:
+            br
+            .row
+              .col-lg-12
+                br
+                h3
+                  p(style="color:#FFFFFF;text-shadow: 0 6px 2px rgba(0,0,0,.9);")
+                    | En este nivel se realiza la coordinaci&#243;n de las m&#225;quinas pertenecientes a la c&#233;lula de fabricaci&#243;n.
+            br
+          section(data-transition="slide", data-background-transition="zoom", data-background="./images/fondo26.jpg")
+            h2(style="color:#099DFF;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);") Nivel (3) &#193;rea:
+            br
+            .row
+              .col-lg-12
+                h3
+                  p(style="color:#FFFFFF;text-shadow: 0 6px 2px rgba(0,0,0,.9);")
+                    | En este nivel se coordinan entre s&#237; las diferentes c&#233;lulas que conforman una l&#237;nea de fabricaci&#243;n. S&#243;lo existen en instalaciones de un elevado nivel de complejidad, por lo que a menudo no se incluye en la pir&#225;mide CIM.
+            br
+          section(data-transition="slide", data-background-transition="zoom", data-background="./images/fondo27.jpg")
+            h2(style="color:#F2C80C;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);") Nivel (4) F&#225;brica:
+            br
+            .row
+              .col-lg-12
+                h3
+                  p(style="color:#FFFFF;text-shadow: 0 6px 2px rgba(0,0,0,.9);")
+                    | En este nivel se realiza el secuenciamiento de tareas y la administraci&#243;n de los recursos. Suele ser el responsable de la gesti&#243;n de una planta o f&#225;brica concreta. Las principales actividades se centran en la planificaci&#243;n y el control de la producci&#243;n.
+            br
+          section(data-transition="slide", data-background-transition="zoom", data-background="./images/fondo28.jpg")
+            h2(style="color:#EE0729;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);") Nivel (5) Empresa:
+            br
+            .row
+              .col-lg-12
+                h4
+                  p(style="color:#FFFFF;text-shadow: 0 6px 2px rgba(0,0,0,.9);")
+                    | En este nivel se lleva a cabo la gesti&#243;n e integraci&#243;n de los niveles inferiores. En &#233;l se consideran principalmente los aspectos de la empresa desde el punto de vista de su gesti&#243;n global:
+                  ul(style="color:#FFFFF;text-shadow: 0 6px 2px rgba(0,0,0,.9);")
+                    li Compras
+                    li.fragment Ventas.
+                    li.fragment Comercializaci&#243;n.
+                    li.fragment Investigaci&#243;n.
+                    li.fragment Objetivos estrat&#233;gicos.
+                    li.fragment Planificaci&#243;n a medio y largo plazo.
+            br
+        // Example of nested vertical slides
+        section(data-transition="concave", data-background="./images/fondoP.png")
+          section
+            .row
+              .col-lg-8
+                h4
+                  p(style="color:#FFFFFF;text-shadow: 0 6px 2px rgba(0,0,0,.6);")
+                    | Entre las &#225;reas donde se desarrolla esta disciplina se destacan sectores industriales en rubros como la Miner&#237;a, Celulosa, Metalmec&#225;nica, Automotriz, Textil, Alimentos, Integraci&#243;n Ingenieril entre otras que requieran de una optimizaci&#243;n en su sistema de producci&#243;n.
+              .col-lg-4
+                img(width="200px", height="350px", data-src="./images/semaforo.png")
+            br
+            .row
+              .col-lg-12
+                h2(style="color:#FFFF;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+                0 0 5px rgba(0,0,0,.1),\
+                0 1px 3px rgba(0,0,0,.3),\
+                0 3px 5px rgba(0,0,0,.2),\
+                0 5px 10px rgba(0,0,0,.25),\
+                0 10px 10px rgba(0,0,0,.2),\
+                0 20px 20px rgba(0,0,0,.15);") Automatizaci&#243;n en la vida cotidiana
+          section(data-transition="slide", data-background-transition="zoom", data-background="./images/fondo32.png")
+            h2(style="color:#F4E6A7;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);") Ejemplos:
+            br
+            .row
+              .col-lg-2
+                br
+                br
+                | Tio
+              .col-lg-8
+                img.fragment.grow(width="500px", height="200px", data-src="./images/tiocinepolis.jpg")
+            .row
+              .col-lg-12
+                img.fragment.shrink(width="200px", height="200px", data-src="./images/metro.png")
+                img.fragment.current-visible(width="400px", height="200px", data-src="./images/automac.jpg")
+            br
+        section(data-transition="convex", data-background="./images/fondo41.jpg")
+          section
+            h2(style="color:#FFFFFF;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);") Automatizaci&#243;n en el software
+            .row
+              .col-lg-4
+                img.fragment.fade-out(data-src="./images/usuario.png")
+              .col-lg-8
+                h3
+                  p(style="color:#FFFFFF;")
+                    | Busca que el usuario use el software intuitivamente sin ning&#250;n tipo de ayuda. Tambi&#233;n busca reducir el tiempo en que se realizan los proceso para que sean m&#225;s eficientes.
+          section(data-transition="slide", data-background-transition="zoom", data-background="./images/fondo42.png")
+            h2(style="color:#D0E7FF;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);") &#191;C&#243;mo podemos hacerlo?
+            .row
+              .col-lg-4
+                | 1. Implementando y validando todos los posibles casos que el usuario haga.
+                br
+                br
+                | 2. Explicar de manera f&#225;cil e intuitiva la manera de usar el software.
+              .col-lg-8
+                p Peque&#241;o vistazo:
+                p
+                  pre.
+                    
+          section(data-transition="slide", data-background-transition="zoom", data-background="./images/fondo43.jpg")
+            h2(style="color:#3ECE73;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);") Ejemplos de software automatizado:
+            .row
+              .col-lg-12
+                img.fragment.current-visible(width="200px", height="200px", data-src="./images/SAT.jpg")
+                img.fragment.grow(width="200px", height="200px", data-src="./images/ine.jpeg")
+            .row
+              .col-lg-12
+                img.fragment.fade-out(data-src="./images/issste.png")
+        section(data-transition="convex", data-background="./images/fondobay.jpg", data-background-transition="slide")
+          section
+            h1(style="color:#1FC2B5;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);") Rob&#243;tica
+            h4
+              p(style="color:rgba(0,0,0,0.5);")
+                | T&#233;cnica que se utiliza en el dise&#241;o y la construcci&#243;n de robots y aparatos que realizan operaciones o trabajos, generalmente en instalaciones industriales y en sustituci&#243;n de la mano de obra humana.
+              h4
+                br
+                img(width="200px", height="300px", data-src="./images/robot1.jpg")
+          section(data-transition="slide", data-background-transition="zoom", data-background="./images/fondobay2.jpg")
+            // -890A5E
+            h2(style="color:#EFD10E;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);") Rob&#243;tica Industrial
+            .row
+              .col-lg-6
+                blockquote
+                  h4
+                    p(style="color:#F8F3D1;text-shadow: 0 3px 2px rgba(0,0,0,.7);")
+                      | &#8220;Un robot industrial es un manipulador multifuncional reprogramable dise&#241;ado para desplazar materiales, piezas, herramientas o dispositivos especiales, mediante movimientos variables programados para la ejecuci&#243;n de una diversidad de tareas.&#8221;
+              .col-lg-6
+                p.fragment
+                  | En la actualidad el uso de los robots industriales est&#225; concentrado en operaciones muy simples, como tareas repetitivas que no requieren tanta precisi&#243;n.
+                p.fragment
+                  | El uso de robots industriales junto con los sistemas de dise&#241;o asistidos por computadora (CAD), y los sistemas de fabricaci&#243;n asistidos por computadora (CAM).
+        section(data-transition="convex", data-background="./images/fondoIA.jpg", data-background-transition="slide")
+          section
+            h2(style="color:#B45A5A;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);") Inteligencia Artificial
+            br
+            h3
+              p(style="color:#EDB7B7;text-shadow: 0 3px 2px rgba(0,0,0,.7);")
+                | Programa de computaci&#243;n dise&#241;ado para realizar determinadas operaciones que se consideran propias de la inteligencia humana, como el autoaprendizaje.
+            br
+          section(data-transition="slide", data-background-transition="zoom", data-background="./images/fondo52.jpg")
+            h2(style="color:#4B78B6;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);") Inteligencia artificial en procesos industriales
+            .col-lg-6(style="text-shadow: 0 3px 2px rgba(0,0,0,.7);")
+              | La tecnolog&#237;a nos permite tomar decisiones de reclutamiento basadas en datos de manera autom&#225;tica, reduciendo el trabajo de filtrar la informaci&#243;n de manera manual. Hoy en d&#237;a disponemos de herramientas SaaS, como Predikt, TalentBin o Gild, que nos permiten realizar estos procesos con unos pocos clics y gracias a los m&#233;todos de inteligencia artificial.
+            .col-lg-6
+              p.fragment
+                img(width="400px", height="450px", data-src="./images/saas.jpg")
+        section(data-transition="convex", data-background="./images/fondo61.jpg", data-background-transition="slide")
+          section
+            h2(style="color:#FFFFFF;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);") Carreras en el IPN relacionadas con Automatizaci&#243;n y Rob&#243;tica
+            br
+            img(width="340", height="460", data-src="./images/ipn.png")
+          section(data-background="./images/fondo62.jpg")
+            .row
+              .col-lg-6
+                h3(style="text-shadow: 0 3px 2px rgba(0,0,0,.7);")
+                  p &#8226; Ingenier&#237;a en Control y Automatizaci&#243;n
+                h4(style="text-shadow: 0 3px 2px rgba(0,0,0,.7);")
+                  p  | ESIME Zacatenco 
+              .col-lg-6
+                h3(style="text-shadow: 0 3px 2px rgba(0,0,0,.7);")
+                  p &#8226;  Ingenier&#237;a Qu&#237;mica Industrial  
+                h4(style="text-shadow: 0 3px 2px rgba(0,0,0,.7);")
+                  p  | ESIQIE 
+            .row
+              .col-lg-6(style="text-shadow: 0 3px 2px rgba(0,0,0,.7);")
+                img(style="width:400px;height:auto;", data-src="./images/esime.png")
+              .col-lg-6
+                img(style="width:400px;height:auto;", data-src="./images/esiqie.png")
+          section(data-background="./images/fondo62.jpg")
+            .row
+              .col-lg-6
+                h3(style="text-shadow: 0 3px 2px rgba(0,0,0,.7);")
+                  p &#8226; Licenciatura en Administraci&#243;n Industrial 
+                h4(style="text-shadow: 0 3px 2px rgba(0,0,0,.7);")
+                  p  | UPIICSA 
+              .col-lg-6
+                h3(style="text-shadow: 0 3px 2px rgba(0,0,0,.7);")
+                  p &#8226; Ingenier&#237;a en Rob&#243;tica Industrial 
+                h4(style="text-shadow: 0 3px 2px rgba(0,0,0,.7);")
+                  p  | ESIME Azcapotzalco 
+            .row
+              .col-lg-6(style="text-shadow: 0 3px 2px rgba(0,0,0,.7);")
+                img(style="width:400px;height:auto;", data-src="./images/upiicsa.png")
+              .col-lg-6
+                img(style="width:400px;height:auto;", data-src="./images/esime.png")
+        section(data-transition="convex", data-background-transition="slide", data-background="./images/Gravity.gif")
+          section
+            h1(style="color:#FFFFFF;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);")
+              | &#161;Felices fiestas!
+          section
+            h1(style="color:#FFFFFF;text-shadow: 0 6px 1px rgba(0,0,0,.1),\
+            0 0 5px rgba(0,0,0,.1),\
+            0 1px 3px rgba(0,0,0,.3),\
+            0 3px 5px rgba(0,0,0,.2),\
+            0 5px 10px rgba(0,0,0,.25),\
+            0 10px 10px rgba(0,0,0,.2),\
+            0 20px 20px rgba(0,0,0,.15);")
+              | &#161;Felices fiestas!
+    script(src="lib/js/head.min.js")
+    script(src="js/reveal.js")
+    script
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      // Optional reveal.js plugins
+      dependencies: [
+      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/zoom-js/zoom.js', async: true },
+      { src: 'plugin/notes/notes.js', async: true }
+      ]
+      });
